@@ -1,0 +1,16 @@
+<form name="form" ng-submit="vm.registerProduct()" novalidate>
+
+	<div class="form-group">
+		<label for="productName">Nome</label>
+		<input type="text" class="form-control" id="productName" required ng-model="vm.name" maxlength="20">
+	</div>
+
+	<div class="form-group">
+		<label for="productPrice">Valor</label>
+		<input type="text" class="form-control" id="productPrice" required ng-model="vm.price" maxlength="20">
+	</div>
+
+	<div class="form-group">
+		<button type="submit" class="btn btn-primary" ng-disabled="form.$invalid">Cadastrar</button>
+	</div>
+</form>

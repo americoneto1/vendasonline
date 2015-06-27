@@ -1,0 +1,15 @@
+{
+  "name": "vendas2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "prepublish": "cd web && bower install"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.0"
+  }
+}

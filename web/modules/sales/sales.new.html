@@ -1,0 +1,18 @@
+<form name="form" ng-submit="vm.registerSale()" novalidate>
+
+	<div class="form-group">
+		<label for="product">Produto</label>
+		<select id="product" class="form-control" ng-options="p.$id as p.$id for p in vm.products" ng-model="vm.product" required>
+			<option value=""></option>
+		</select>
+	</div>
+
+	<div class="form-group">
+		<label for="quantity">Quantidade</label>
+		<input type="number" class="form-control" ng-model="vm.quantity" required />
+	</div>
+
+	<div class="form-group">
+		<button type="submit" class="btn btn-primary" ng-disabled="form.$invalid">Registrar</button>
+	</div>
+</form>

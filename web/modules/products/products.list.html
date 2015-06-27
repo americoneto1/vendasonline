@@ -1,0 +1,14 @@
+<table class="table table-condensed">
+	<thead>
+		<tr>
+			<th>Produto</th>
+			<th>Valor</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="p in vm.products">
+			<td>{{p.$id}}</td>
+			<td>{{p.price | currency}}</td>
+		</tr>
+	</tbody>
+</table>
